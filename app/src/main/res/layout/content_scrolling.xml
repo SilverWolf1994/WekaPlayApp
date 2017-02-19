@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="app.android.brandonchavez.com.wekaplayapp.ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spAttributeSky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:entries="@array/attribute_sky" />
+
+        <EditText
+            android:id="@+id/etAttributeTemperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:hint="@string/attribute_temperature" />
+
+        <EditText
+            android:id="@+id/etAttributeHumidity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:hint="@string/attribute_humidity" />
+
+        <CheckBox
+            android:id="@+id/cbAttributeWindy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/attribute_windy" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/play" />
+
+            <TextView
+                android:id="@+id/tvPrediction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bPrediction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prediction" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
